@@ -1,0 +1,20 @@
+<div class="div-row">
+  <mat-card *ngFor="let item of itemsList" class="movie-card">
+    <mat-card-content>
+      <p>Title: <span class="lbl-title">{{item.title | titlecase}}</span></p>
+      <p>Description: {{item.description}}</p>
+      <p>Category: {{item.category}}</p>
+
+      <div class="div-buttons">
+        <button mat-raised-button color="primary" (click)="onEdit(item)">Edit</button>
+        <div class="div-spacer"></div>
+        <button mat-raised-button color="accent" (click)="onDelete(item)">Delete</button>
+      </div>
+      <div class="div-spacer"></div>
+      <div class="div-buttons">
+        <button mat-raised-button color="warn" (click)="onAddToCart(item)">Add to cart</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>
