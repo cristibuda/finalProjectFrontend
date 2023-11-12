@@ -8,10 +8,16 @@ import {Item} from "../models/Item";
 })
 export class DashboardComponent {
   selectedItem: Item = new Item("", "", "");
-
-  onChangeData(item: Item): void {
+  selectedUser: any;
+  onChangeItem(item: Item): void {
     console.log("dashboard on change data");
     console.log(item);
     this.selectedItem = item;
   }
+  onChangeUser(user: any): void {
+    console.log("dashboard on change data");
+    console.log(user);
+    this.selectedUser= user;
+  }
+
 }

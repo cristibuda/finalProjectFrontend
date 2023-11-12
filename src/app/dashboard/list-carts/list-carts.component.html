@@ -1,0 +1,15 @@
+<div class="div-row">
+  <mat-card *ngFor="let cart of cartList" class="movie-card">
+    <mat-card-content>
+      <p>User: <span class="lbl-title">{{cart.user.username | titlecase}}</span></p>
+      <p *ngFor="let item of cart.items">{{item.title}}: {{item.category}} {{item.description}}</p>
+
+
+      <div class="div-buttons">
+        <button mat-raised-button color="accent" (click)="onDeleteCart(cart)">Delete</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>
+<p>list-users works!</p>

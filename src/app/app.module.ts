@@ -17,6 +17,9 @@ import {AddEditItemComponent} from "./dashboard/add-edit-item/add-edit-item.comp
 import {MatSelectModule} from "@angular/material/select";
 import { AddEditCartComponent } from './dashboard/add-edit-cart/add-edit-cart.component';
 import {MatIconModule} from "@angular/material/icon";
+import { AddEditUserComponent } from './dashboard/add-edit-user/add-edit-user.component';
+import { ListUsersComponent } from './dashboard/list-users/list-users.component';
+import { ListCartsComponent } from './dashboard/list-carts/list-carts.component';
 
 
 @NgModule({
@@ -27,6 +30,9 @@ import {MatIconModule} from "@angular/material/icon";
     AddEditItemComponent,
     ListItemsComponent,
     AddEditCartComponent,
+    AddEditUserComponent,
+    ListUsersComponent,
+    ListCartsComponent,
 
   ],
   imports: [

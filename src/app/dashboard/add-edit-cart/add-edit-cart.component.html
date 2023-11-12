@@ -1,7 +1,4 @@
-<p>add-edit-cart works!</p>
-
-
-  <mat-card *ngFor="let item of items">
+ <mat-card *ngFor="let item of items">
     <p>
       {{item.title}}
     </p>
@@ -9,5 +6,5 @@
       <mat-icon>delete</mat-icon>
     </button>
   </mat-card>
-
+<button mat-raised-button color="primary" (click)="onBuy()">Buy</button>
 
